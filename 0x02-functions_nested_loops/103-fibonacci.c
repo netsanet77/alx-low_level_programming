@@ -19,6 +19,6 @@ nxt = n1 + n2;
 n1 = n2;
 n2 = nxt;
 }
-printf("%d", sum);
+printf("%d\n", sum);
 return (0);
 }
