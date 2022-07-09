@@ -5,7 +5,6 @@
  */
 int main(void)
 {
-int i;
 long int n1, n2, nxt, sum;
 n1 = 1;
 n2 = 2;
