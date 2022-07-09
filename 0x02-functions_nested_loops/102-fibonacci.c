@@ -5,19 +5,20 @@
  */
 int main(void)
 {
-int i, n1, n2, nxt;
+int i;
+long int n1, n2, nxt;
 n1 = 1;
 n2 = 2;
-printf("%d, ", n1);
+printf("%ld, ", n1);
 for (i = 1; i < 50; i++)
 {
 if (i != 49)
 {
-printf("%d, ", n2);
+printf("%ld, ", n2);
 }
 else
 {
-printf("%d\n", n2);
+printf("%ld\n", n2);
 }
 nxt = n1 + n2;
 n1 = n2;
