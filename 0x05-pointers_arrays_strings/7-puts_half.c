@@ -12,6 +12,7 @@ a = strlen(str);
 if (a % 2 != 0)
 {
 n = (a - 1) / 2;
+n = n + 1;
 }
 else
 {
