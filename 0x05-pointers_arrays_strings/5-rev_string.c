@@ -11,7 +11,7 @@ int i, j, a;
 char b;
 a = strlen(s);
 j = 0;
-for (i = a - 1; s[i] != 0; i--)
+for (i = a - 1; j < i; i--)
 {
 b = s[i];
 s[i] = s[j];
