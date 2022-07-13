@@ -15,7 +15,7 @@ for (i = 0; i < a; i++)
 {
 if (s[i] <= '9' && s[i] >= '0')
 {
-result = result * 10 + (s[i] + '0');
+result = result * 10 + (s[i] - '0');
 }
 else if (s[i] == '-')
 {
