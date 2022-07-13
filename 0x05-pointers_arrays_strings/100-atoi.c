@@ -9,7 +9,7 @@ int _atoi(char *s)
 int i, sign;
 unsigned int result = 0;
 sign = 1;
-for (i = 0; s[i] != NULL; i++)
+for (i = 0; i < strlen(s); i++)
 {
 if (s[i] <= 9 && s[i] >= 0)
 {
