@@ -7,10 +7,11 @@
  */
 int _atoi(char *s)
 {
-int i, sign;
+int i, a, sign;
 unsigned int result = 0;
 sign = 1;
-for (i = 0; i < strlen(s); i++)
+a = strlen(s);
+for (i = 0; i < a; i++)
 {
 if (s[i] <= 9 && s[i] >= 0)
 {
