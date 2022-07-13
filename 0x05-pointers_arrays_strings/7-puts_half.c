@@ -1,23 +1,23 @@
 #include "main.h"
 #include <string.h>
 /**
- * puts_half - prints half of the string
+ * puts_half - prints half of a string
  * @str: the given string
  * Return: void
  */
-void print_rev(char *str)
+void puts_half(char *str)
 {
-int i, a, n;
+int a, i, n;
 a = strlen(str);
-if (a % 2 == 0)
-{
-n = a / 2;
-}
-else
+if (a % 2 != 0)
 {
 n = (a - 1) / 2;
 }
-for (i = n; i < a ; i++)
+else
+{
+n =  a / 2;
+}
+for (i = n; i < a; i++)
 {
 _putchar(str[i]);
 }
