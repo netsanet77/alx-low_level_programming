@@ -20,6 +20,7 @@ nstr[j] = s[i];
 j++;
 i++;
 }
+break;
 }
 }
 return (nstr);
