@@ -15,7 +15,7 @@ if (b != 3 && b % a == 0)
 }
 else if (b / 2 > a)
 {
-        return (is_not_odd_composit((a + 2), b));
+return (is_not_odd_composit((a + 2), b));
 }
 else
 {
@@ -35,7 +35,7 @@ if (((n % 2 == 0) && (n != 2)) || n < 2)
 {
 	return (0);
 }
-else 
+else
 {
 	return (is_not_odd_composit(3, n));
 }
