@@ -3,7 +3,7 @@
 /**
  * main -  entry point
  * @argc: the size of the array
- * @args: given array
+ * @argv: given array
  * Return: Always 0
  */
 int main(int argc, char *argv[])
