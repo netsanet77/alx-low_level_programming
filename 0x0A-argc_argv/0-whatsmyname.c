@@ -6,8 +6,8 @@
  * @args: given array
  * Return: Always 0
  */
-int main(int argc, char *args[])
+int main(int argc, char *argv[])
 {
-printf("%s\n", args[argc - 1]);
+printf("%s\n", argv[argc - 1]);
 return (0);
 }
