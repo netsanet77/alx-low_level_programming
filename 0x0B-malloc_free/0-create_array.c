@@ -11,5 +11,6 @@ for (i = 0; i < size; i++)
 {
 p[i] = c;
 }
+free(p);
 return (p);
 }
