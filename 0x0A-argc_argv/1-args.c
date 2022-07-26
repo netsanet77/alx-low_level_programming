@@ -1,13 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
- * main - entry point
+ * main - prints the number of arguments passed to it
+ * @argc: the number of arguments
+ * @argv: unused parameter
+ * Return: 0
  *
  */
-int main(int argc, char* argv[])
+int main(int argc, char __attribute__((unused)) *argv[])
 {
-if (argv[argc - 1] != '\0')
- printf("%d", (argc - 1));
-	return 0;
+printf("%d\n", (argc - 1));
+return (0);
 }
