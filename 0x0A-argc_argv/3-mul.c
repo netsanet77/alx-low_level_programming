@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - entry point\
  * @argc: the size of the array
@@ -13,14 +14,14 @@ if (argc == 3)
 {
 for (i = 1; i < argc; i++)
 {
-result = result * argv[i];
+result = result * atoi(argv[i]);
 }
 printf("%d\n", result);
 return (0);
 }
 else
 {
-printf("Error");
+printf("Error\n");
 return (1);
 }
 }
