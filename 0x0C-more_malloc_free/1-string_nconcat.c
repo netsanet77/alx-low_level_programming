@@ -26,13 +26,17 @@ p = malloc(num *sizeof(char));
 if (!p)
 	return (NULL);
 j = 0;
-for (i = 0; i < x; i++)
-	p[i] = s1[i];
-for (i = x; i < (num - 1); i++)
+for (i = 0; i < (num - 1); i++)
 {
+	if (i < x)
+		p[i] = s1[i];
+	else
+	{
 	p[i] = s2[j];
 	j++;
+	}
 }
+p[i] = '\0';
 return (p);
 }
 
