@@ -27,7 +27,7 @@ if (!p)
 	return (NULL);
 strcpy(p, s1);
 j = 0;
-for (i = x; i < num; i++)
+for (i = x; i < (num - 1); i++)
 {
 	p[i] = s2[j];
 	j++;
