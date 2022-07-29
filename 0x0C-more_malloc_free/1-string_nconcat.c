@@ -25,8 +25,9 @@ num = n + x + 1;
 p = malloc(num *sizeof(char));
 if (!p)
 	return (NULL);
-strcpy(p, s1);
 j = 0;
+for (i = 0; i < x; i++)
+	p[i] = s1[i];
 for (i = x; i < (num - 1); i++)
 {
 	p[i] = s2[j];
