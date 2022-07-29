@@ -11,29 +11,27 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int x, y;
+unsigned int x, y, num, j, i;
 char *p;
 if (s1 == NULL)
-{
 	s1 = "";
-}
 if (s2 == NULL)
-{
 	s2 = "";
-}
 x = strlen(s1);
 y = strlen(s2);
 if (n >= y)
-{
 	n = y;
-}
-p = malloc((x + n + 1) * sizeof(char));
+num = n + x + 1;
+p = malloc(num *sizeof(char));
 if (!p)
-{
-return (NULL);
-}
+	return (NULL);
 strcpy(p, s1);
-strcat(p, s2);
+j = 0;
+for (i = x; i < num; i++)
+{
+	p[i] = s2[j];
+	j++;
+}
 return (p);
 }
 
