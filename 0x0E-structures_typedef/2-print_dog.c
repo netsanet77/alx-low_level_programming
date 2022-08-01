@@ -16,10 +16,10 @@ if (d->name == NULL)
 	printf("Name: %s\n", null);
 else
 	printf("Name: %s\n", d->name);
-if (!(d->age))
-	printf("Age: 0\n");
-else
+if (d->age)
 	printf("Age: %.6f\n", d->age);
+else
+	printf("Age: %f\n", 0);
 if (d->owner == NULL)
 	printf("Owner: %s\n", null);
 else
