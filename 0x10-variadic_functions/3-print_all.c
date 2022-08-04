@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * print_char - print the character
  * @ap: arguments of print_all function
@@ -68,7 +69,7 @@ print_t print[] = {
 };
 
 va_start(ap, format);
-while (format[k])
+while (format && format[k])
 {
 	j = 0;
 	while (j < 4)
