@@ -18,4 +18,5 @@ op_t ops[] = {
 {NULL, NULL}
 };
 int i;
+return (0);
 }
