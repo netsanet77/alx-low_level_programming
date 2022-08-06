@@ -1,14 +1,16 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include <stdlib.h>
 /**
- *
- *
+ * main - print the calculation
+ * @argc: the number of arguments
+ * @argv: given array
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int a, b, d;
+	int a, b;
 	char *c;
+
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -17,13 +19,12 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	c = argv[2];
 	b = atoi(argv[3]);
-	d = (*get_op_func(c))(a, b);
 	if (get_op_func(c) == NULL || c[1] != '\0')
 	{
-		        printf("Error\n");
-			        exit(99);
+		printf("Error\n");
+		exit(99);
 	}
-	printf("%d\n", d);
+	printf("%d\n", (*get_op_func(c))(a, b));
 
 	return (0);
 }
