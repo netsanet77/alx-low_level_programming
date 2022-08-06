@@ -1,5 +1,5 @@
-#include "3.calc.h"
-#include <stdlib.h>
+#include "3-calc.h"
+#include <stdio.h>
 /**
  * get_op_func - selects the correct function
  * @s: operator
@@ -17,8 +17,8 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
-int i;
-while (*s != *(ops[i].op) && ops[i].op = NULL)
+int i = 0;
+while (*s != *(ops[i].op) && ops[i].op != NULL)
 	i++;
 return (ops[i].f);
 }
