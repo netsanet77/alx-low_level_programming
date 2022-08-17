@@ -6,10 +6,12 @@
  */
 int pop_listint(listint_t **head)
 {
-	int i = (*head)->n;
+	listint_t *pop_node = *head;
+	int i = pop_node->n;
 
 	if (*head == NULL)
 		return (0);
 	(*head) = (*head)->next;
+	free(pop_node);
 	return (i);
 }
