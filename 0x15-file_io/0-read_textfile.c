@@ -14,7 +14,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int f, r;
-	size_t i;
+	size_t i, no_letters = 0;
 	char *b;
 
 	if (filename == NULL)
@@ -39,8 +39,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	b[letters] = '\0';
 	close(f);
-	for (i = 0; i < letters; i++)
+	for (i = 0; b[i] != '\0'; i++)
+	{
+		no_letters++;
 		_putchar(b[i]);
+	}
 
-	return (letters);
+	return (no_letters);
 }
