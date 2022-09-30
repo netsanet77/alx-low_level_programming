@@ -23,13 +23,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		free(temp);
 		return (1);
 	}
-	while (temp != NULL)
+	while (temp != NULL && node_no < index - 1)
 	{
-		if (node_no < index - 1)
-		{
-			temp = temp->next;
-			node_no++;
-		}
+		temp = temp->next;
+		node_no++;
 	}
 	if (temp == NULL || temp->next == NULL)
 		return (-1);
