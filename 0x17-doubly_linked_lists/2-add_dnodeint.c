@@ -6,12 +6,12 @@
  * @head: the head of the list
  * @n: the new element to be added
  *
- * Return: the address of the new element or NULL if it failed 
+ * Return: the address of the new element or NULL if it failed
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *temp, *new_node;
-	
+
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
 	{
@@ -30,5 +30,5 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	new_node->next = temp;
 	temp->prev = new_node;
 	*head = new_node;
-	return (new_node);	
+	return (new_node);
 }
